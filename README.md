@@ -1,20 +1,21 @@
 ## Input Decorator
 * A one-way bind from parent component ts to child component html
 
-parent component
 ```html
+<!-- parent component -->
 <event>
   <event-thumbnail [event]='someEvent'></event-thumbnail>
 </event>
 ```
 
 ```javascript
+// parent component
 ...
 someEvent = { title: 'the title for some event' };
 ...
 ```
 
-child component
 ```html
+<!-- child component -->
 <p>{{ event.title }}</p>
 ```
