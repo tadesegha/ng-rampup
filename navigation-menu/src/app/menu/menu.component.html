@@ -1,0 +1,8 @@
+<header>
+  <nav *ngFor='let navigationItem of navigationItems'>
+    <navItem [item]='navigationItem' (click)='navItemClicked(navigationItem)'></navItem>
+  </nav>
+</header>
+<section>
+  <instruction></instruction>
+</section>
